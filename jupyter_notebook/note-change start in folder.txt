@@ -10,3 +10,13 @@ For Window 10:
 
 (4) Start the Jupyter Notebook App. The notebook interface will appear in a new browser window or tab. A secondary terminal window (used only for error logging and for shut down) will be also opened.
 
+https://stackoverflow.com/questions/36994414/jupyter-windows-shortcut-corrupt-by-default
+The cleanest way I found to change the default working directory is to edit the cwp.py file in the Anaconda folder as following (at the end of the file):
+
+Replace this line:
+
+os.chdir(documents_folder)
+
+with the folder you want to start in:
+
+os.chdir("C:\\Private_Files\\MachineLearning")
