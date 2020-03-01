@@ -1,0 +1,18 @@
+(1) Open conda cmd prompt from Start Menu \Anaconda3(64 bit)\Anaconda Prompt(Anaconda3) 
+
+(2) Update conda
+    > conda update conda   OR conda update anaconda
+    *** conda is updated to 4.8.2
+
+(3) Create a new env called python 38
+    >conda create -n python38 python=3.8
+
+(4) >conda activate python38
+
+(5) pip install ipykernel 
+
+(6) python -m ipykernel install --name python38
+
+(7) conda env list
+    conda info
+    jupyter kernelspec list
