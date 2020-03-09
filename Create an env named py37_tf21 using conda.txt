@@ -1,15 +1,22 @@
 
 
 ** Intall TensorFlow in Anaconda Navigator ** 
+
+pre- steps:
+(1) Run Anaconda prompt (Anaconda3)
+(2) conda update -n base -c default conda
+
+Build the venv
 (1) Open Anaconda Navigator
 (2) Create a new env called py37_tf21
     >conda create -n py37_tf21 python=3.7
 
-(3) select the "tensorflow" package from "Not Installed" 
+(3) select the "tensorflow" and "tensorflow-dataset" packages from "Not Installed" (may need to update the Index to include TensorFlow)
+
     it will install tensorflow, tensorflow-base, and tensorflow-estimator
 
-(3) conda activate py37_tf21
 
+(3) conda activate py37_tf21
 (4) pip install ipykernel
 
 (5) python -m ipykernel install --name py37_tf21
@@ -37,8 +44,10 @@
 (13) Show the installed packages:
    > pip list
 
-(14) pip install matpotlib, pandas,
-
+(14) pip install matplotlib
+(15) pip instal pandas
+     pip install sklearn
+(16) Restart your computer for changes to take effect.
 
 
 Change Jupyter Notebook startup folder (Windows)
